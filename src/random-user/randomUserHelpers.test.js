@@ -12,28 +12,30 @@ describe('randomUserHelpers test', () => {
     afterEach(nock.cleanAll);
 
     it('getRandomUser should return user', () => {
-        nock(apiUrl)
+        const scope = nock(apiUrl)
             .get('/api/')
             .reply(200, {
-                results: [
-                    { name: 'Igor'}
-                ]
-            });
+                results: [{ name: 'Igor'}]
+            })
+            .persist();
 
         return query
             .getRandomUser()
             .then( (res) => res.name )
+            .then( (res) => { console.log('name: ', res); return res;} )
             .then( res => expect(res).toEqual('Igor'));
     });
 
-    it('use fixture Promise syntax', () => {
+    it('use fixture Promise syntax', async (done) => {
         nock.back('random-user-response.json')
             .then( ( { nockDone } ) => 
                 query
                     .getRandomUser()
                     .then( res => res.name.first)
+                    .then( res => { console.log('first name: ', res); return res;})
                     .then( res => expect(res).toEqual('maya'))
                     .then(nockDone)
+                    .then(() => { done(); } )
             )
     });
 
