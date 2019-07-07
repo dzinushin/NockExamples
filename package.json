@@ -1,0 +1,27 @@
+{
+  "name": "NockExamples",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzinushin/NockExamples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzinushin/NockExamples/issues"
+  },
+  "homepage": "https://github.com/dzinushin/NockExamples#readme",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "nock": "^10.0.6"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}

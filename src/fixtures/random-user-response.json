@@ -1,0 +1,97 @@
+[
+    {
+        "scope": "https://randomuser.me:443",
+        "method": "GET",
+        "path": "/api/",
+        "body": "",
+        "status": 200,
+        "response": {
+            "results": [
+                {
+                    "gender": "female",
+                    "name": {
+                        "title": "mrs",
+                        "first": "maya",
+                        "last": "haugland"
+                    },
+                    "location": {
+                        "street": "birger aaneruds vei 9665",
+                        "city": "tinn austbygd",
+                        "state": "trøndelag",
+                        "postcode": "8409",
+                        "coordinates": {
+                            "latitude": "53.1296",
+                            "longitude": "15.1939"
+                        },
+                        "timezone": {
+                            "offset": "+10:00",
+                            "description": "Eastern Australia, Guam, Vladivostok"
+                        }
+                    },
+                    "email": "maya.haugland@example.com",
+                    "login": {
+                        "uuid": "a47fb1de-7cb1-425f-97da-9788e8bd7688",
+                        "username": "redmeercat539",
+                        "password": "skidoo",
+                        "salt": "WRfjw8eC",
+                        "md5": "200bfd45176d4ca477fb2ca6bf621a76",
+                        "sha1": "4fa458e8687aa7b20075e2c265f6a4be8f12039f",
+                        "sha256": "e578ef5a1b054384170d0105b6a59b01c689a20beeec19ca46553bbd1daff046"
+                    },
+                    "dob": {
+                        "date": "1972-03-01T11:15:57Z",
+                        "age": 47
+                    },
+                    "registered": {
+                        "date": "2011-02-27T12:43:52Z",
+                        "age": 8
+                    },
+                    "phone": "67844554",
+                    "cell": "95615503",
+                    "id": {
+                        "name": "FN",
+                        "value": "01037213744"
+                    },
+                    "picture": {
+                        "large": "https://randomuser.me/api/portraits/women/89.jpg",
+                        "medium": "https://randomuser.me/api/portraits/med/women/89.jpg",
+                        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/89.jpg"
+                    },
+                    "nat": "NO"
+                }
+            ],
+            "info": {
+                "seed": "e1975483fa2d70d9",
+                "results": 1,
+                "page": 1,
+                "version": "1.2"
+            }
+        },
+        "rawHeaders": [
+            "Date",
+            "Sun, 07 Jul 2019 17:57:26 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Set-Cookie",
+            "__cfduid=d1c2902d48692975f083a7e45e07bd7191562522246; expires=Mon, 06-Jul-20 17:57:26 GMT; path=/; domain=.randomuser.me; HttpOnly",
+            "X-Powered-By",
+            "Express",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Cache-Control",
+            "no-cache",
+            "ETag",
+            "W/\"46c-dYET2YWgHcAtiybU8S74uQ\"",
+            "Vary",
+            "Accept-Encoding",
+            "Expect-CT",
+            "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+            "Server",
+            "cloudflare"
+        ]
+    }
+]
