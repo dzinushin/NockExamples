@@ -1,10 +1,10 @@
 const nock = require('nock');
 const fetch = require('node-fetch');
 const nockBackOptions = require('./helpers/nock');
-// const request = requite('request');
 
 const randomUserUrl = 'https://randomuser.me/api/'
 
+// for get and save new fixture just remove existing fixture file ./fixtures/random-user-response.json
 const saveRandomUserResp = () => {
     nock.back.fixtures = __dirname + '/fixtures';
     nock.back.setMode('record');

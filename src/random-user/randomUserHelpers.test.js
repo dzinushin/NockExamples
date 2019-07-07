@@ -6,7 +6,7 @@ const apiUrl = 'https://randomuser.me';
 describe('randomUserHelpers test', () => {
     beforeEach(() => {
         nock.back.fixtures = __dirname + '/../fixtures';
-        nock.back.setMode('record');
+        nock.back.setMode('dryrun'); // actually default mode
     });
 
     afterEach(nock.cleanAll);
